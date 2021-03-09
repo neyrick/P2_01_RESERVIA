@@ -9,14 +9,13 @@ body {
 }
 
 .logo {
-  float: left;
-  height: 50px;
-  width: 50px;
+  display: inline-block;
 }
 
 .intro {
   font-size: 15px;
   margin-top: 30px;
+  clear: both;
 }
 
 h1 {
@@ -79,20 +78,14 @@ input:focus {
   padding-top: 20px;
 }
 
-.inscription {
+.inscription a {
   color: #0065fc;
   font-weight: 800;
   margin: 20px 20px 20px 20px;
+  font-size: 1.5em;
 }
 
-.hebergements {
-  color: #0065fc;
-  margin: 20px 20px 20px 20px;
-  border-top: solid #0065fc;
-  padding-top: 20px;
-}
-
-.activities:visited {
+.links a:visited {
   color:black;
 }
 
@@ -116,12 +109,26 @@ a {
   color: black;
 }
 
+.inscription {
+  float: right;
+  padding-top:  12px;
+}
+
 .links {
   float: right;
   list-style: none;
-  display: flex;
-  align-content: space-between;
   font-size: 20px;
+  margin-top: 0px;
+}
+
+.links li {
+  display: inline-block;
+  padding: 10px 20px 10px 20px;
+  color: #0065fc;
+}
+
+.link_active {
+  border-top: solid #0065fc;
 }
 
 .fa-money-bill-wave, .fa-child, .fa-dog, .fa-heart {
@@ -159,12 +166,6 @@ a {
   padding-left: 15px;
 }
 
-.index {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
 .filters {
   margin-top: 30px;
   display: flex;
@@ -177,7 +178,6 @@ a {
   margin-left: 25px;
   height:42px;
 }
-
 
 .romantic, .famille, .eco, .animals {
   margin-left: 25px;

@@ -9,4 +9,14 @@
 
 @media screen and (max-width: 600px) {
     /* Mobile */
+
+  .links {
+    clear: both;
+  }
+
+  .link_active {
+    border-top: none;
+    border-bottom: solid #0065fc;
+  }
+
 }
